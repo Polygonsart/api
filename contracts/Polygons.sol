@@ -4,11 +4,11 @@ import "./TradeableERC721Token.sol";
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
 /**
- * @title Polygon
- * Polygon - a contract for my non-fungible polygons.
+ * @title Polygons
+ * Polygons - a contract for my non-fungible polygons.
  */
-contract Polygon is TradeableERC721Token {
-  constructor(address _proxyRegistryAddress) TradeableERC721Token("Polygon", "POL", _proxyRegistryAddress) public {  }
+contract Polygons is TradeableERC721Token {
+  constructor(address _proxyRegistryAddress) TradeableERC721Token("Polygons", "POL", _proxyRegistryAddress) public {  }
 
   function baseTokenURI() public view returns (string memory) {
     return "https:/polygons.art/api/polygon/";

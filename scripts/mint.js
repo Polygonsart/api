@@ -5,7 +5,7 @@ const INFURA_KEY = process.env.INFURA_KEY
 const NFT_CONTRACT_ADDRESS = process.env.NFT_CONTRACT_ADDRESS
 const OWNER_ADDRESS = process.env.OWNER_ADDRESS
 const NETWORK = process.env.NETWORK
-const NUM_POLYGONS = 12
+const NUM_POLYGONS = 5
 
 
 if (!MNEMONIC || !INFURA_KEY || !OWNER_ADDRESS || !NETWORK) {

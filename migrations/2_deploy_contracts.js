@@ -1,4 +1,4 @@
-const Polygon = artifacts.require("./Polygon.sol");
+const Polygons = artifacts.require("./Polygons.sol");
 
 module.exports = function(deployer, network) {
   // OpenSea proxy registry addresses for rinkeby and mainnet.
@@ -9,5 +9,5 @@ module.exports = function(deployer, network) {
     proxyRegistryAddress = "0xa5409ec958c83c3f309868babaca7c86dcb077c1";
   }
 
-  deployer.deploy(Polygon, proxyRegistryAddress, {gas: 5000000});
+  deployer.deploy(Polygons, proxyRegistryAddress, {gas: 5000000});
 };
