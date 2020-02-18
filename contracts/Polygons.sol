@@ -11,6 +11,6 @@ contract Polygons is TradeableERC721Token {
   constructor(address _proxyRegistryAddress) TradeableERC721Token("Polygons", "POL", _proxyRegistryAddress) public {  }
 
   function baseTokenURI() public view returns (string memory) {
-    return "https:/www.polygons.art/api/polygon/";
+    return "https://www.polygons.art/api/polygon/";
   }
 }
