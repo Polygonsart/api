@@ -5,7 +5,7 @@ const INFURA_KEY = process.env.INFURA_KEY
 const NFT_CONTRACT_ADDRESS = process.env.NFT_CONTRACT_ADDRESS
 const OWNER_ADDRESS = process.env.OWNER_ADDRESS
 const NETWORK = process.env.NETWORK
-const NUM_POLYGONS = 5
+const NUM_POLYGONS = 34
 
 
 if (!MNEMONIC || !INFURA_KEY || !OWNER_ADDRESS || !NETWORK) {
@@ -40,7 +40,7 @@ async function main() {
         // Polygons issued directly to the owner.
         for (var i = 0; i < NUM_POLYGONS; i++) {
             const result = await nftContract.methods.mintTo(OWNER_ADDRESS).send({ from: OWNER_ADDRESS });
-            console.log("Minted Polygon. Transaction: " + result.transactionHash)
+            console.log("Minted Parcel. Transaction: " + result.transactionHash)
         }
     }
 }
